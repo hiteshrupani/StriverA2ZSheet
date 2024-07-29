@@ -2,7 +2,7 @@
 
 //{ Driver Code Starts
 import java.io.*;
-import java.util.*;
+// import java.util.*;
 
 class LCMGCD {
     public static void main(String args[]) throws IOException {
@@ -14,7 +14,7 @@ class LCMGCD {
             Long A = Long.parseLong(S[0]);
             Long B = Long.parseLong(S[1]);
 
-            Solve ob = new Solve();
+            Solution44 ob = new Solution44();
             Long[] ptr = ob.lcmAndGcd(A,B);
             
             System.out.print(ptr[0]);
@@ -26,8 +26,8 @@ class LCMGCD {
 // } Driver Code Ends
 
 
-class Solve {
-    static Long[] lcmAndGcd(Long A , Long B) {
+class Solution44 {
+    public Long[] lcmAndGcd(Long A , Long B) {
         Long[] ans = new Long[2];
         Long originalA = A;
         Long originalB = B;

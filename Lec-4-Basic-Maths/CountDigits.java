@@ -15,13 +15,13 @@ public class CountDigits
         {
             int N = Integer.parseInt(read.readLine());
             // Solution ob = new Solution();
-            System.out.println(Solution.evenlyDivides(N));
+            System.out.println(Solution41.evenlyDivides(N));
         }
     }
 }
 // } Driver Code Ends
 
-class Solution{
+class Solution41 {
     static int evenlyDivides(int N){
         int userInput = N;
         int answer = 0; // number of digits that evenly divide N

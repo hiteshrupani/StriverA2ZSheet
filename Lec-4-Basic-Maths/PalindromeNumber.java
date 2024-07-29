@@ -8,13 +8,13 @@ public class PalindromeNumber {
         int x = scanner.nextInt();
         scanner.close();
 
-        Solution obj = new Solution();
+        Solution43 obj = new Solution43();
         System.out.println(obj.isPalindrome(x));
 
     }
 }
 
-class Solution {
+class Solution43 {
     public boolean isPalindrome(int x) {
 
         // rejecting negative number

@@ -15,7 +15,7 @@ class SumOfAllDivisors
         // {
             int N=sc.nextInt();
             sc.close();
-            Sol ob = new Sol();
+            Solution46 ob = new Solution46();
             long ans  = ob.sumOfDivisors(N);
             System.out.println(ans);
         // }
@@ -26,7 +26,7 @@ class SumOfAllDivisors
 
 
 //User function Template for Java
-class Sol{
+class Solution46 {
     long sumOfDivisors(int N){
 
         // brute force approach 

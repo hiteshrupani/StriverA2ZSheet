@@ -9,13 +9,13 @@ public class ArmstrongNumber {
         int x = scanner.nextInt();
         scanner.close();
 
-        System.out.println(Solution.isArmstrong(x));
+        System.out.println(Solution45.isArmstrong(x));
 
 
     }
 }
 
-class Solution {
+class Solution45 {
 
     static boolean isArmstrong(int x) {
         double sum = 0;

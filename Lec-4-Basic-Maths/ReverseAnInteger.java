@@ -8,13 +8,13 @@ public class ReverseAnInteger {
         int x = scanner.nextInt();
         scanner.close();
 
-        Solution obj = new Solution();
+        Solution42 obj = new Solution42();
         System.out.println(obj.reverse(x));
 
     }
 }
 
-class Solution {
+class Solution42 {
     public int reverse(int x) {
 
         int reversed = 0;
