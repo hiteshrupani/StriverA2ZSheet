@@ -7,7 +7,7 @@
 
 // import java.io.*;
 import java.util.*;
-class Main {
+class PrintWithoutLoop {
 	public static void main (String[] args) {
 	    
 	    //taking input using Scanner class
@@ -49,13 +49,16 @@ class Solution51
   public void printNos(int N)
     {
         
-        
+        // checking for contstraints
+		// base condition
         if (1 > N || N > 1000) {
             return;
         }
         
+		// recursive call
         printNos(N-1);
         
+		// printing with whitespace at the end
         System.out.print(N + " ");
     }
 }
