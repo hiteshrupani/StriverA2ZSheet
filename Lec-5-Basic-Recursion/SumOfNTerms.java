@@ -13,7 +13,7 @@ class SumOfNTerms {
         int t = Integer.parseInt(read.readLine());
         while (t-- > 0) {
             int N = Integer.parseInt(read.readLine());
-            Solution ob = new Solution();
+            Solution55 ob = new Solution55();
             System.out.println(ob.sumOfSeries(N));
         }
     }
@@ -24,7 +24,7 @@ class SumOfNTerms {
 
 // User function Template for Java
 
-class Solution {
+class Solution55 {
     long sumOfSeries(long n) {
         // base condition : cube of 1 is 1
         if (n == 1) {

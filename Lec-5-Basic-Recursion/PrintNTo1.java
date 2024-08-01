@@ -12,7 +12,7 @@ class PrintNTo1 {
         int t = Integer.parseInt(br.readLine().trim());
         while (t-- > 0) {
             int N = Integer.parseInt(br.readLine().trim());
-            Solution53 obj = new Solution53();
+            Solution54 obj = new Solution54();
             obj.printNos(N);
             System.out.println();
         }
@@ -21,7 +21,7 @@ class PrintNTo1 {
 // } Driver Code Ends
 
 
-class Solution53 {
+class Solution54 {
 
     void printNos(int N) {
         

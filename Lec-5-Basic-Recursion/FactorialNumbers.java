@@ -1,3 +1,5 @@
+// 5.6 - https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty%255B%255D=-1&page=1&query=problemTypefunctionaldifficulty%255B%255D-1page1
+
 //{ Driver Code Starts
 // Initial Template for Java
 import java.io.*;
@@ -10,7 +12,7 @@ public class FactorialNumbers{
         // while (t-- > 0) {
             long N = sc.nextLong();
 
-            Solution ob = new Solution();
+            Solution56 ob = new Solution56();
             ArrayList<Long> ans = ob.factorialNumbers(N);
             for (long num : ans) {
                 System.out.print(num + " ");
@@ -26,7 +28,7 @@ public class FactorialNumbers{
 
 
 // User function Template for Java
-class Solution {
+class Solution56 {
     public ArrayList<Long> factorialNumbers(long n) {
         ArrayList<Long> result = new ArrayList<>();
         findFactorials(n, 1, 1, result);
