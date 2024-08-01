@@ -3,11 +3,11 @@
 import java.io.*;
 import java.util.*;
 
-class FactorialNumbers {
+public class FactorialNumbers{
     public static void main(String args[]) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        while (t-- > 0) {
+        // int t = sc.nextInt();
+        // while (t-- > 0) {
             long N = sc.nextLong();
 
             Solution ob = new Solution();
@@ -16,7 +16,7 @@ class FactorialNumbers {
                 System.out.print(num + " ");
             }
             System.out.println();
-        }
+        // }
 
         sc.close();
     }
@@ -28,23 +28,22 @@ class FactorialNumbers {
 // User function Template for Java
 class Solution {
     public ArrayList<Long> factorialNumbers(long n) {
-        ArrayList<Long> output = new ArrayList<Long>();
-        
-        // base condition
-        for (long i = 1; factorial(i) <= n; i++ ) {
-            output.add(factorial(i));
-        }
-        
-        return output;
-        
+        ArrayList<Long> result = new ArrayList<>();
+        findFactorials(n, 1, 1, result);
+        return result;
     }
     
-    public long factorial(long n) {
-        
-        if (n < 1) {
-            return 1;
+    public void findFactorials(long n, long current, long factorial, ArrayList<Long> result) {
+        // base case if factorial is larger than n
+        if (factorial > n) {
+            return;
         }
-        
-        return n * factorial(n - 1);
+
+        // if not larger we add it to the array
+        result.add(factorial);
+
+        // recursive call to find next factorial
+        findFactorials(n, current+1, factorial * (current + 1), result); // reusing last factorial here to get new factorial
     }
+    
 }
