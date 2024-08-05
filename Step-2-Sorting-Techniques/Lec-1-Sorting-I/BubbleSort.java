@@ -60,6 +60,8 @@ class Solution12
     {
         // Rounds
         for (int i = n-1; i >= 1; i--) {
+            // for best case(already sorted)
+            boolean didSwap = false;
 
             // Pushing max elem to last
             for (int j = 0; j <= i-1; j++) {
@@ -71,7 +73,13 @@ class Solution12
                     int temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
+                    didSwap = true;
                 }
+            }
+
+            // already sorted check
+            if (!didSwap) {
+                break;
             }
         }
     }
