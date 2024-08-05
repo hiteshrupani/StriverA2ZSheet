@@ -9,7 +9,7 @@ class BubbleSort
     //method to print the Elements of the array
     static void printArray(int[] arr)
     {
-        int n = arr.length;
+//        int n = arr.length;
         for (int j : arr) System.out.print(j + " ");
         System.out.println();
     }
