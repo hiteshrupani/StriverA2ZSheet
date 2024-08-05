@@ -14,7 +14,6 @@ public class CountDigits
         while(t-- > 0)
         {
             int N = Integer.parseInt(read.readLine());
-            // Solution ob = new Solution();
             System.out.println(Solution41.evenlyDivides(N));
         }
     }
