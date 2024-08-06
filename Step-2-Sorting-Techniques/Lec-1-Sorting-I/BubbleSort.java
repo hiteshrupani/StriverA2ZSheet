@@ -1,7 +1,6 @@
 // 1.2 - https://www.geeksforgeeks.org/problems/bubble-sort/1
 
 //{ Driver Code Starts
-//Initial Template for Java
 
 import java.util.*;
 //import java.io.*;
