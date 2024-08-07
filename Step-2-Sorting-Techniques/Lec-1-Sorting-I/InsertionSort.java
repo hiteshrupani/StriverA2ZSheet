@@ -4,7 +4,7 @@
 import java.util.*;
 //import java.lang.Math;
 
-class Sorting
+class InsertionSort
 {
     static void printArray(int[] arr, int size)
     {
@@ -31,7 +31,6 @@ class Sorting
 
             t--;
         }
-
     }
 }
 // } Driver Code Ends
