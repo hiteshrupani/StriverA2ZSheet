@@ -1,17 +1,17 @@
-// 3.1.8 - https://leetcode.com/problems/move-zeroes/description/
+// 3.1.7 - https://leetcode.com/problems/move-zeroes/description/
 
 public class MoveZeroesToEnd {
     public static void main(String[] args) {
         int[] arr = BasicArrayFunctions.getIntArrayFromUserInput();
 
-        Solution318 solution = new Solution318();
+        Solution317 solution = new Solution317();
         solution.moveZeroesToEndOptimal(arr);
 
         BasicArrayFunctions.printArray(arr);
     }
 }
 
-class Solution318 {
+class Solution317 {
     public void moveZeroesToEndMine(int[] nums) {
         int n = nums.length;
 
