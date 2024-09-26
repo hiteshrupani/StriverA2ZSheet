@@ -1,4 +1,4 @@
-// 3.1.12 - https://leetcode.com/problems/single-number/ 
+// 3.1.12 - https://leetcode.com/problems/single-number/
 
 public class SingleNumber {
     public static void main(String[] args) {
